@@ -25,4 +25,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [\App\Http\Controllers\Api\AuthController::class, 'logout']);
 
     Route::resource('/tokos', \App\Http\Controllers\Api\TokoController::class);
+    Route::resource('/products', \App\Http\Controllers\Api\ProductController::class);
 });

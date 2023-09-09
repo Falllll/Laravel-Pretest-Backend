@@ -46,4 +46,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Toko::class);
     }
+
+        public function product()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
